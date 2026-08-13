@@ -158,12 +158,13 @@ function Home() {
       </section>
 
       {/* Quem somos */}
-      <section
-        id="quemsomos"
-        className="bg-surface bg-contain bg-right bg-no-repeat py-20"
-        style={{ backgroundImage: `url(${mapBg.url})` }}
-      >
-        <div className="mx-auto max-w-7xl px-4">
+      <section id="quemsomos" className="relative overflow-hidden bg-surface py-20">
+        <div
+          className="pointer-events-none absolute inset-y-0 right-0 w-full bg-contain bg-right bg-no-repeat opacity-25 md:w-2/3"
+          style={{ backgroundImage: `url(${mapBg.url})` }}
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-7xl px-4">
           <div className="max-w-3xl">
             <SectionLabel>Potencialize Seu Sucesso</SectionLabel>
             <h2 className="mt-3 text-3xl text-navy md:text-4xl">

@@ -49,11 +49,13 @@ function ContatoPage() {
         </div>
       </section>
 
-      <section
-        className="bg-surface py-20"
-        style={{ backgroundImage: `url(${memphis.url})`, backgroundSize: "cover" }}
-      >
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-2">
+      <section className="relative overflow-hidden bg-surface py-20">
+        <div
+          className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url(${memphis.url})` }}
+          aria-hidden
+        />
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-2">
           <div className="rounded-2xl bg-background p-8 shadow-lg md:p-10">
             <h2 className="text-3xl text-navy">Fale Conosco</h2>
             <div className="mt-8">
