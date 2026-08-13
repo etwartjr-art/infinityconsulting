@@ -20,8 +20,11 @@ export const Route = createFileRoute("/contato")({
         property: "og:description",
         content: "Deixe sua mensagem que em breve nossa equipe entrará em contato.",
       },
+      { property: "og:url", content: "https://infinityconsulting.lovable.app/contato" },
     ],
+    links: [{ rel: "canonical", href: "https://infinityconsulting.lovable.app/contato" }],
   }),
+
   component: ContatoPage,
 });
 

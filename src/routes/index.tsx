@@ -42,8 +42,11 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:image", content: heroBg.url },
       { name: "twitter:image", content: heroBg.url },
+      { property: "og:url", content: "https://infinityconsulting.lovable.app/" },
     ],
+    links: [{ rel: "canonical", href: "https://infinityconsulting.lovable.app/" }],
   }),
+
   component: Home,
 });
 

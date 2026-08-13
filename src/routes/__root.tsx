@@ -81,19 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Consultoria Empresarial – Infinity Consulting" },
+      { title: "Infinity Consulting" },
       {
         name: "description",
         content:
           "Consultoria empresarial com soluções estratégicas e acessíveis para o sucesso do seu negócio.",
       },
       { name: "author", content: "Infinity Consulting" },
-      { property: "og:title", content: "Consultoria Empresarial – Infinity Consulting" },
-      {
-        property: "og:description",
-        content:
-          "Consultoria empresarial com soluções estratégicas e acessíveis para o sucesso do seu negócio.",
-      },
+      { property: "og:site_name", content: "Infinity Consulting" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -107,7 +102,44 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://infinityconsulting.lovable.app/#website",
+              name: "Infinity Consulting",
+              url: "https://infinityconsulting.lovable.app",
+              inLanguage: "pt-BR",
+              publisher: { "@id": "https://infinityconsulting.lovable.app/#organization" },
+            },
+            {
+              "@type": "ProfessionalService",
+              "@id": "https://infinityconsulting.lovable.app/#organization",
+              name: "Infinity Consulting",
+              url: "https://infinityconsulting.lovable.app",
+              description:
+                "Consultoria empresarial com soluções estratégicas e acessíveis: diagnóstico, plano de ação, execução e acompanhamento.",
+              telephone: "+55 62 98588-6261",
+              email: CONTACT.email,
+              foundingDate: "2018",
+              areaServed: "BR",
+              address: {
+                "@type": "PostalAddress",
+                addressRegion: "GO",
+                addressCountry: "BR",
+              },
+              sameAs: SOCIALS.map((s) => s.href),
+            },
+          ],
+        }),
+      },
+    ],
   }),
+
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
