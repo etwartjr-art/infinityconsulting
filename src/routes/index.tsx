@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-// habilitar para receber email
+// integrar o email no site para receber os email
 import {
   BarChart3,
   Building2,
