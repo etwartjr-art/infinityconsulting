@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-// integrar o email no site para receber os email
+// conecta meu supabase
 import {
   BarChart3,
   Building2,
