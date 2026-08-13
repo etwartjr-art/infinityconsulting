@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-// conecta meu supabase
+// cria dados no supabase
 import {
   BarChart3,
   Building2,
