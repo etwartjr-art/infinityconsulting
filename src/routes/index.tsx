@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-// cria dados no supabase
+// jogar meu site no Supabase
 import {
   BarChart3,
   Building2,
