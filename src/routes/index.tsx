@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-// VERIFICAR A EXTRUTURA E SEGURANÇA DO SITE
+// resolver o problema de vunerabilidade
 import {
   BarChart3,
   Building2,
