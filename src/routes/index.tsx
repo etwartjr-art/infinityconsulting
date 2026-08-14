@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-// existe um erro no banco de dados github
-// corigir
+// VERIFICAR A EXTRUTURA E SEGURANÇA DO SITE
 import {
   BarChart3,
   Building2,
