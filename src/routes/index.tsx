@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-// jogar meu site no Supabase
+// existe um erro no banco de dados github
+// corigir
 import {
   BarChart3,
   Building2,
