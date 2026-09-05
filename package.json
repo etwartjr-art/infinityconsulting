@@ -1,5 +1,6 @@
 {
   "name": "tanstack_start_ts",
+  "description": "Infinity Consulting website",
   "private": true,
   "sideEffects": false,
   "type": "module",
